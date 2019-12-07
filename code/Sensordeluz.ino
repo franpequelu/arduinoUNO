@@ -23,21 +23,33 @@ void loop()
   
     if( NIVEL_0 <= NIVEL_ENTRADA >= NIVEL_1)
  {
-  digitalWrite(3,HIGH);   
+  digitalWrite(3,HIGH); 
+  digitalWrite(7,LOW); 
+  digitalWrite(A3,LOW); 
+  digitalWrite(9,LOW);  
+      
  }
     if( NIVEL_1 <= NIVEL_ENTRADA >= NIVEL_2)
  {
-  digitalWrite(7,HIGH);   
+  digitalWrite(3,LOW);
+  digitalWrite(7,HIGH); 
+  digitalWrite(A3,LOW); 
+  digitalWrite(9,LOW); 
  }
     if( NIVEL_2 <= NIVEL_ENTRADA >= NIVEL_3)
  {
-  digitalWrite(A3,HIGH);   
- }   
+  digitalWrite(3,LOW);
+  digitalWrite(7,lOW); 
+  digitalWrite(A3,HIGH); 
+  digitalWrite(9,LOW);     
+ }    
     if( NIVEL_3 <= NIVEL_ENTRADA >= NIVEL_4)
  {
+  digitalWrite(3,LOW);
+  digitalWrite(7,lOW); 
+  digitalWrite(A3,LOW);
   digitalWrite(9,HIGH);   
  }      
 
-  
     delay(1000);
 }
